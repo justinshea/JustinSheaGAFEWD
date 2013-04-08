@@ -1,25 +1,5 @@
 $(document).ready(function() {
 	
-	// var circleName
-	// var direction 
-
-	// $('.circle_wrapper').attr('class').split(' ')[1]);
-
-	// if (circleName == '.circle_one') {
-	// 	direction = 'right';	
-	// }
-
-	// else if (circleName == '.circle_two') {
-	// 	direction = 'top';	
-	// }
-
-	// else if (circleName == '.circle_two') {
-	// 	direction = 'right';	
-	// }
-
-	// else if (circleName == undefined) {
-	// 	direction = 'bottom';	
-	// }
 
 	$('.circle').tooltip({
 		html: true,
@@ -45,5 +25,15 @@ $(document).ready(function() {
 
 	$('.dropdown-toggle').dropdown();
 
+
+});
+
+
+
+var windowSize = $(window);
+
+windowSize.resize(function() {
+ 
+console.log(windowSize.width());
 
 });
